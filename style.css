@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 62.5%;
+    background-color: rgb(237, 237, 237);
+    font-family: "Poppins";
+}
+.main{
+    font-size: 2rem;
+}
+.nav{
+    height: 9vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1.5rem;
+    padding: 0 3rem;
+}
+.nav h4{
+    font-weight: 500;
+}
+
+.nav i{
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 50%;
+}
+#center-text{
+    width: 50%;
+    height: 35vh;
+    padding: 5rem 0 0 12rem ;
+    font-size: 8.5rem;
+    font-weight: 500;
+    line-height: 11.23rem;
+    margin-bottom: 8rem;
+}
+
+.center-two{
+    display: flex;
+    justify-content: space-between;
+    height: 30vh;
+}
+.center-two h3{
+    width: fit-content;
+    padding: 1.7rem 12rem ;
+    font-size: 2rem;
+    font-weight: 400;
+    
+}
+.menu ul{
+    list-style: none;
+    padding: 2rem 1rem ;
+    width: 35vw;
+    height: 30vh;
+
+}
+li{
+    border-top: 2px solid black;
+    width: 80%;
+    padding: 2.5rem 0;
+}
+li i{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+#one{
+    position: relative;
+    opacity: 0;
+    left: 65%;
+}
+#two{
+    position: relative;
+    left: 58%;
+    opacity: 0;
+}
+#three{
+    position: relative;
+    opacity: 0;
+    left: 70%;
+}
+li:hover i{
+    opacity: 1;
+    background-color: rebeccapurple;
+}
+
+li:hover{
+    text-decoration: underline 2px;
+}
+
+.bottom{
+    height: 40vh;
+    width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1543076447-215ad9ba6923?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: 0 40%;
+    background-size: cover;
+
+}
+
+
+@media (max-width:460px) {
+    .main{
+        font-size: 1.6rem;
+    }
+    .nav{
+        gap: 1rem;
+        padding: 0 1rem;
+    } 
+    
+    .nav i{
+        font-size: 1.5rem;
+    }
+    #center-text{
+        width: 100%;
+        padding: 0 0 0 2rem ;
+        font-size: 3.3rem;
+        font-weight: 600;
+        line-height: 5.5rem;
+        width: 100vw;
+    }
+    
+    .center-two{
+        position: absolute;
+        bottom: 32%;
+        height: 30vh;
+    }
+    .center-two h3{
+        width: 100vw;
+        padding: 1.7rem 1rem ;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+    .menu ul{
+        position: absolute;
+        top: 37%;
+        left: 0;
+    }
+    li{
+        width: 90%;
+        padding: 0.1rem 0;
+        font-size: 1rem;
+    }
+    li i{
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    
+    .bottom{
+        height: 33vh;
+        position: absolute;
+        bottom:0;
+        width: 100%;
+        background-color: rgba(245, 139, 139, 0);
+        background-image: url(Screenshot\ \(950\).png);
+        background-position: 50% 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+}
+@media (max-width:550px) and (min-width:460px){
+    #center-text{
+        width: 90%;
+        font-size: 5.4rem;
+        line-height: 6rem;
+        height: 35vh;
+        padding: 3rem 0 0 5rem ;
+        font-weight: 500;
+        margin-bottom: 10rem;
+    }
+    .center-two h3{
+        padding: 1.7rem 2rem ;
+        font-size: 1.5rem;
+    }
+    .menu ul{
+        list-style: none;
+        padding: 1rem 0rem ;
+        font-size: 1.5rem;
+        width: 35vw;
+
+    }
+    li{
+        border-top: 2px solid black;
+        width: 80%;
+        padding: 1.5rem 0;
+    }
+}
+
+@media (max-width:700px) and (min-width:550px) {
+    #center-text{
+        width: 90%;
+        font-size: 5rem;
+        line-height: 6rem;
+    }
+    
+    .center-two h3{
+        padding: 1.7rem 2rem ;
+        font-size: 1.5rem;
+        
+    }
+    .menu ul{
+        list-style: none;
+        padding: 1rem 0rem ;
+        font-size: 1.5rem;
+        width: 35vw;
+
+    }
+    li{
+        border-top: 2px solid black;
+        width: 80%;
+        padding: 2.5rem 0;
+    }
+}
+@media (max-width:988px) and (min-width:700px) {
+    #center-text{
+        width: 90%;
+        font-size: 6rem;
+        line-height: 9rem;
+    }
+}
+@media (max-width:1500px) and (min-width:988px) {
+    #center-text{
+        width: 90%;
+        font-size: 8rem;
+    }
+}
